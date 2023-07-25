@@ -32,7 +32,7 @@ html {
 }
 
 /* styles */
-*{
+* {
   font-family: poppins;
 }
 
@@ -88,25 +88,59 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   padding: 2.85rem;
   border-radius: 1rem;
-  height: 35rem;
+  height: 38rem;
   box-shadow: 0 0.7rem 0 0 var(--red-shadow);
 }
-.input{
-  width: 100%;
+.input {
   border: 1px var(--grayish-blue) solid;
   border-radius: 0.5rem;
   height: 4rem;
   padding-left: 1.5rem;
-
+  color: var(--dark-blue);
+  font-weight: 800;
 }
-input::placeholder{
+input::placeholder {
   color: var(--dark-blue);
   opacity: 0.7;
   font-weight: 800;
 }
+.input-holder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.first-name-holder {
+  position: relative;
+}
+.last-name-holder {
+  position: relative;
+}
+.email-holder {
+  position: relative;
+}
+.password-holder {
+  position: relative;
+}
+.error-message {
+  color: var(--red);
+  font-size: 1.2rem;
+  text-align: right;
+  font-style: italic;
+  visibility: hidden;
+}
+.not-email-error{
+  display: none;
+}
+.error-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  visibility: hidden;
+}
+
 .first-name-input {
 }
 .last-name-input {
@@ -124,8 +158,8 @@ input::placeholder{
   color: var(--red);
   font-weight: 700;
 }
-.submit-btn{
-  display:flex;
+.submit-btn {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -138,6 +172,11 @@ input::placeholder{
   font-weight: 500;
   letter-spacing: 0.1rem;
   box-shadow: 0 0.3rem 0 0 var(--green-shadow);
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+.submit-btn:hover {
+  opacity: 0.5;
 }
 
 /* resposive */
@@ -147,32 +186,30 @@ input::placeholder{
   margin-left: auto;
 }
 
-@media (min-width: 375px){
-
+@media (min-width: 375px) {
 }
-@media (min-width: 1440px){
-  .container{
+@media (min-width: 1090px) {
+  .container {
     width: 105rem;
   }
-  body{
+  body {
     padding: 0;
   }
-  .main{
+  .main {
     flex-direction: row;
     height: 65rem;
   }
-  .content{
-     width: 55rem; 
+  .content {
+    width: 55rem;
   }
-  .content__title{
-    font-weight:900;
+  .content__title {
+    font-weight: 900;
     font-size: 4rem;
     text-align: left;
     padding-right: 2rem;
     line-height: 4.2rem;
   }
-  .content__text{
+  .content__text {
     text-align: left;
   }
 }
-
