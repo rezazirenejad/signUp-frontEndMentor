@@ -34,40 +34,48 @@ function submitBtnHandler(event) {
   if (firstNameInput.value === "") {
     errIconFirstName.style.visibility = "visible";
     errMsgFirstName.style.visibility = "visible";
+    firstNameInput.style.border = "2px solid var(--red)"
   }
   // hide errIcon and errMsg if the first name input get value and submit after error
   else {
     errIconFirstName.style.visibility = "hidden";
     errMsgFirstName.style.visibility = "hidden";
+    firstNameInput.style.border = "1px var(--grayish-blue) solid"
   }
   // visible errIcon and errMsg if the last name input is empty
   if (lastNameInput.value === "") {
       errIconLastName.style.visibility = "visible";
       errMsgLastName.style.visibility = "visible";
+      lastNameInput.style.border= "2px solid var(--red)"
     }
     // hide errIcon and errMsg if the last name input get value and submit after error
     else {
       errIconLastName.style.visibility = "hidden";
       errMsgLastName.style.visibility = "hidden";
+      lastNameInput.style.border = "1px var(--grayish-blue) solid"
     }
     // visible errIcon and errMsg if the email input is empty
     if (emailInput.value === "") {
         errIconEmail.style.visibility = "visible";
         emptyErrMsgEmail.style.visibility = "visible";
+        emailInput.style.border= "2px solid var(--red)"
     }
     // hide errIcon and errMsg if the email input get value and submit after error
     else {
       errIconEmail.style.visibility = "hidden";
       emptyErrMsgEmail.style.visibility = "hidden";
+      emailInput.style.border = "1px var(--grayish-blue) solid"
     }
     if (passwordInput.value === "") {
         errIconPassword.style.visibility = "visible";
         errMsgPassword.style.visibility = "visible";
+        passwordInput.style.border= "2px solid var(--red)"
     }
     // hide errIcon and errMsg if the password input get value and submit after error
     else {
       errIconPassword.style.visibility = "hidden";
       errMsgPassword.style.visibility = "hidden";
+      passwordInput.style.border = "1px var(--grayish-blue) solid"
     }
 }
 
