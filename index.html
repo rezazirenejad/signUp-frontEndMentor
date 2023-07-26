@@ -32,8 +32,8 @@
               type="text"
               placeholder="First Name"
             />
-            <p class="error-message">First Name Cannot be empty</p>
-            <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <p class="error-message" id="err-message-first-name">First Name Cannot be empty</p>
+            <svg class="error-icon" id="err-icon-first-name" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">
                 <circle fill="#FF7979" cx="12" cy="12" r="12" />
                 <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
@@ -47,8 +47,8 @@
               type="text"
               placeholder="Last Name"
             />
-            <p class="error-message">Last Name Cannot be empty</p>
-            <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <p class="error-message" id="err-message-last-name">Last Name Cannot be empty</p>
+            <svg class="error-icon" id="err-icon-last-name" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">
                 <circle fill="#FF7979" cx="12" cy="12" r="12" />
                 <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
@@ -64,9 +64,9 @@
               class="email-input input"
               placeholder="Email Address"
             />
-            <p class="error-message">Email Cannot be empty</p>
+            <p class="error-message" id="empty-err-message-email">Email Cannot be empty</p>
             <p class="error-message not-email-error">Looks like this is not an email</p>
-            <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <svg class="error-icon" id="err-icon-email" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">
                 <circle fill="#FF7979" cx="12" cy="12" r="12" />
                 <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
@@ -82,8 +82,8 @@
               class="password-input input"
               placeholder="Password"
             />
-            <p class="error-message">Password Cannot be empty</p>
-            <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <p class="error-message" id="err-message-password">Password Cannot be empty</p>
+            <svg class="error-icon" id="err-icon-password" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">
                 <circle fill="#FF7979" cx="12" cy="12" r="12" />
                 <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
@@ -103,5 +103,6 @@
         </form>
       </div>
     </main>
+    <script src="./assets/scripts/app.js"></script>
   </body>
 </html>
